@@ -4,6 +4,7 @@ export default class Gui {
     this.newUser = document.querySelector('.name');
     this.next = document.querySelector('.next');
     this.startChat = document.querySelector('.login');
+    this.loginLabel = document.querySelector('.header');
 
     this.chat = document.querySelector('.chat');
     this.send = document.querySelector('.send');
@@ -13,7 +14,11 @@ export default class Gui {
     this.msgField = document.querySelector('.messages-field');
   }
 
-
+  changeName() {
+    this.loginLabel.style.color = 'red';
+    this.newUser.classList.add('invalid');
+    this.loginLabel.innerHTML = 'Select another name';
+  }
 
   drawUsersList(user) {
     this.userList.innerHTML += `
