@@ -1,8 +1,8 @@
 export default class Logic {
   constructor(gui) {
     this.gui = gui;
-    this.url = 'ws://localhost:7070/ws';
-    // this.url = 'ws://ahj-ws-server-pfokin.herokuapp.com';
+    // this.url = 'ws://localhost:7070/ws';
+    this.url = 'ws://ahj-ws-server-pfokin.herokuapp.com';
     this.enterUser = this.enterUser.bind(this);
     this.user = null;
   }
